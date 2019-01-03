@@ -10,7 +10,7 @@ arr_isbn = isbn.split("")
 sum = 0
 # 奇数番号の数字には3を、偶数番号の数字には1をそれぞれ掛けます。
 for i in 1..isbn.length
-	if (i % 2 == 1)
+	if (i % 2 == 0)
 		arr_isbn[i-1] = arr_isbn[i-1].to_i * 3
 	else
 		arr_isbn[i-1] = arr_isbn[i-1].to_i * 1
