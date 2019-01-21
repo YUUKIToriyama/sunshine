@@ -1,2 +1,218 @@
+<!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>シェル芸で作業を効率化 | YUUKIToriyama</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link href="data:text/css;charset=utf-8,body%20%7B%0Afont%2Dfamily%3A%20Helvetica%2C%20arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E6%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%2010px%3B%0Abackground%2Dcolor%3A%20white%3B%0Apadding%3A%2030px%3B%20%7D%0Abody%20%3E%20%2A%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%20%21important%3B%20%7D%0Abody%20%3E%20%2A%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%20%21important%3B%20%7D%0Aa%20%7B%0Acolor%3A%20%234183C4%3B%20%7D%0Aa%2Eabsent%20%7B%0Acolor%3A%20%23cc0000%3B%20%7D%0Aa%2Eanchor%20%7B%0Adisplay%3A%20block%3B%0Apadding%2Dleft%3A%2030px%3B%0Amargin%2Dleft%3A%20%2D30px%3B%0Acursor%3A%20pointer%3B%0Aposition%3A%20absolute%3B%0Atop%3A%200%3B%0Aleft%3A%200%3B%0Abottom%3A%200%3B%20%7D%0Ah1%2C%20h2%2C%20h3%2C%20h4%2C%20h5%2C%20h6%20%7B%0Amargin%3A%2020px%200%2010px%3B%0Apadding%3A%200%3B%0Afont%2Dweight%3A%20bold%3B%0A%2Dwebkit%2Dfont%2Dsmoothing%3A%20antialiased%3B%0Acursor%3A%20text%3B%0Aposition%3A%20relative%3B%20%7D%0Ah1%3Ahover%20a%2Eanchor%2C%20h2%3Ahover%20a%2Eanchor%2C%20h3%3Ahover%20a%2Eanchor%2C%20h4%3Ahover%20a%2Eanchor%2C%20h5%3Ahover%20a%2Eanchor%2C%20h6%3Ahover%20a%2Eanchor%20%7B%0Abackground%3A%20url%28data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8%2F9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw%2FeHBhY2tldCBiZWdpbj0i77u%2FIiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8%2BIDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI%2FPsQhXeAAAABfSURBVHjaYvz%2F%2Fz8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg%3D%3D%29%20no%2Drepeat%2010px%20center%3B%0Atext%2Ddecoration%3A%20none%3B%20%7D%0Ah1%20tt%2C%20h1%20code%20%7B%0Afont%2Dsize%3A%20inherit%3B%20%7D%0Ah2%20tt%2C%20h2%20code%20%7B%0Afont%2Dsize%3A%20inherit%3B%20%7D%0Ah3%20tt%2C%20h3%20code%20%7B%0Afont%2Dsize%3A%20inherit%3B%20%7D%0Ah4%20tt%2C%20h4%20code%20%7B%0Afont%2Dsize%3A%20inherit%3B%20%7D%0Ah5%20tt%2C%20h5%20code%20%7B%0Afont%2Dsize%3A%20inherit%3B%20%7D%0Ah6%20tt%2C%20h6%20code%20%7B%0Afont%2Dsize%3A%20inherit%3B%20%7D%0Ah1%20%7B%0Afont%2Dsize%3A%2028px%3B%0Acolor%3A%20black%3B%20%7D%0Ah2%20%7B%0Afont%2Dsize%3A%2024px%3B%0Aborder%2Dbottom%3A%201px%20solid%20%23cccccc%3B%0Acolor%3A%20black%3B%20%7D%0Ah3%20%7B%0Afont%2Dsize%3A%2018px%3B%20%7D%0Ah4%20%7B%0Afont%2Dsize%3A%2016px%3B%20%7D%0Ah5%20%7B%0Afont%2Dsize%3A%2014px%3B%20%7D%0Ah6%20%7B%0Acolor%3A%20%23777777%3B%0Afont%2Dsize%3A%2014px%3B%20%7D%0Ap%2C%20blockquote%2C%20ul%2C%20ol%2C%20dl%2C%20li%2C%20table%2C%20pre%20%7B%0Amargin%3A%2015px%200%3B%20%7D%0Ahr%20%7B%0Abackground%3A%20transparent%20url%28data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw%2FeHBhY2tldCBiZWdpbj0i77u%2FIiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8%2BIDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI%2FPqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC%29%20repeat%2Dx%200%200%3B%0Aborder%3A%200%20none%3B%0Acolor%3A%20%23cccccc%3B%0Aheight%3A%204px%3B%0Apadding%3A%200%3B%20%7D%0Abody%20%3E%20h2%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%0Apadding%2Dtop%3A%200%3B%20%7D%0Abody%20%3E%20h1%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%0Apadding%2Dtop%3A%200%3B%20%7D%0Abody%20%3E%20h1%3Afirst%2Dchild%20%2B%20h2%20%7B%0Amargin%2Dtop%3A%200%3B%0Apadding%2Dtop%3A%200%3B%20%7D%0Abody%20%3E%20h3%3Afirst%2Dchild%2C%20body%20%3E%20h4%3Afirst%2Dchild%2C%20body%20%3E%20h5%3Afirst%2Dchild%2C%20body%20%3E%20h6%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%0Apadding%2Dtop%3A%200%3B%20%7D%0Aa%3Afirst%2Dchild%20h1%2C%20a%3Afirst%2Dchild%20h2%2C%20a%3Afirst%2Dchild%20h3%2C%20a%3Afirst%2Dchild%20h4%2C%20a%3Afirst%2Dchild%20h5%2C%20a%3Afirst%2Dchild%20h6%20%7B%0Amargin%2Dtop%3A%200%3B%0Apadding%2Dtop%3A%200%3B%20%7D%0Ah1%20p%2C%20h2%20p%2C%20h3%20p%2C%20h4%20p%2C%20h5%20p%2C%20h6%20p%20%7B%0Amargin%2Dtop%3A%200%3B%20%7D%0Ali%20p%2Efirst%20%7B%0Adisplay%3A%20inline%2Dblock%3B%20%7D%0Aul%2C%20ol%20%7B%0Apadding%2Dleft%3A%2030px%3B%20%7D%0Aul%20%3Afirst%2Dchild%2C%20ol%20%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%20%7D%0Aul%20%3Alast%2Dchild%2C%20ol%20%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%3B%20%7D%0Adl%20%7B%0Apadding%3A%200%3B%20%7D%0Adl%20dt%20%7B%0Afont%2Dsize%3A%2014px%3B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dstyle%3A%20italic%3B%0Apadding%3A%200%3B%0Amargin%3A%2015px%200%205px%3B%20%7D%0Adl%20dt%3Afirst%2Dchild%20%7B%0Apadding%3A%200%3B%20%7D%0Adl%20dt%20%3E%20%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%20%7D%0Adl%20dt%20%3E%20%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%3B%20%7D%0Adl%20dd%20%7B%0Amargin%3A%200%200%2015px%3B%0Apadding%3A%200%2015px%3B%20%7D%0Adl%20dd%20%3E%20%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%20%7D%0Adl%20dd%20%3E%20%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%3B%20%7D%0Ablockquote%20%7B%0Aborder%2Dleft%3A%204px%20solid%20%23dddddd%3B%0Apadding%3A%200%2015px%3B%0Acolor%3A%20%23777777%3B%20%7D%0Ablockquote%20%3E%20%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%20%7D%0Ablockquote%20%3E%20%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%3B%20%7D%0Atable%20%7B%0Apadding%3A%200%3B%20%7D%0Atable%20tr%20%7B%0Aborder%2Dtop%3A%201px%20solid%20%23cccccc%3B%0Abackground%2Dcolor%3A%20white%3B%0Amargin%3A%200%3B%0Apadding%3A%200%3B%20%7D%0Atable%20tr%3Anth%2Dchild%282n%29%20%7B%0Abackground%2Dcolor%3A%20%23f8f8f8%3B%20%7D%0Atable%20tr%20th%20%7B%0Afont%2Dweight%3A%20bold%3B%0Aborder%3A%201px%20solid%20%23cccccc%3B%0Atext%2Dalign%3A%20left%3B%0Amargin%3A%200%3B%0Apadding%3A%206px%2013px%3B%20%7D%0Atable%20tr%20td%20%7B%0Aborder%3A%201px%20solid%20%23cccccc%3B%0Atext%2Dalign%3A%20left%3B%0Amargin%3A%200%3B%0Apadding%3A%206px%2013px%3B%20%7D%0Atable%20tr%20th%20%3Afirst%2Dchild%2C%20table%20tr%20td%20%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%20%7D%0Atable%20tr%20th%20%3Alast%2Dchild%2C%20table%20tr%20td%20%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%3B%20%7D%0Aimg%20%7B%0Amax%2Dwidth%3A%20100%25%3B%20%7D%0Aspan%2Eframe%20%7B%0Adisplay%3A%20block%3B%0Aoverflow%3A%20hidden%3B%20%7D%0Aspan%2Eframe%20%3E%20span%20%7B%0Aborder%3A%201px%20solid%20%23dddddd%3B%0Adisplay%3A%20block%3B%0Afloat%3A%20left%3B%0Aoverflow%3A%20hidden%3B%0Amargin%3A%2013px%200%200%3B%0Apadding%3A%207px%3B%0Awidth%3A%20auto%3B%20%7D%0Aspan%2Eframe%20span%20img%20%7B%0Adisplay%3A%20block%3B%0Afloat%3A%20left%3B%20%7D%0Aspan%2Eframe%20span%20span%20%7B%0Aclear%3A%20both%3B%0Acolor%3A%20%23333333%3B%0Adisplay%3A%20block%3B%0Apadding%3A%205px%200%200%3B%20%7D%0Aspan%2Ealign%2Dcenter%20%7B%0Adisplay%3A%20block%3B%0Aoverflow%3A%20hidden%3B%0Aclear%3A%20both%3B%20%7D%0Aspan%2Ealign%2Dcenter%20%3E%20span%20%7B%0Adisplay%3A%20block%3B%0Aoverflow%3A%20hidden%3B%0Amargin%3A%2013px%20auto%200%3B%0Atext%2Dalign%3A%20center%3B%20%7D%0Aspan%2Ealign%2Dcenter%20span%20img%20%7B%0Amargin%3A%200%20auto%3B%0Atext%2Dalign%3A%20center%3B%20%7D%0Aspan%2Ealign%2Dright%20%7B%0Adisplay%3A%20block%3B%0Aoverflow%3A%20hidden%3B%0Aclear%3A%20both%3B%20%7D%0Aspan%2Ealign%2Dright%20%3E%20span%20%7B%0Adisplay%3A%20block%3B%0Aoverflow%3A%20hidden%3B%0Amargin%3A%2013px%200%200%3B%0Atext%2Dalign%3A%20right%3B%20%7D%0Aspan%2Ealign%2Dright%20span%20img%20%7B%0Amargin%3A%200%3B%0Atext%2Dalign%3A%20right%3B%20%7D%0Aspan%2Efloat%2Dleft%20%7B%0Adisplay%3A%20block%3B%0Amargin%2Dright%3A%2013px%3B%0Aoverflow%3A%20hidden%3B%0Afloat%3A%20left%3B%20%7D%0Aspan%2Efloat%2Dleft%20span%20%7B%0Amargin%3A%2013px%200%200%3B%20%7D%0Aspan%2Efloat%2Dright%20%7B%0Adisplay%3A%20block%3B%0Amargin%2Dleft%3A%2013px%3B%0Aoverflow%3A%20hidden%3B%0Afloat%3A%20right%3B%20%7D%0Aspan%2Efloat%2Dright%20%3E%20span%20%7B%0Adisplay%3A%20block%3B%0Aoverflow%3A%20hidden%3B%0Amargin%3A%2013px%20auto%200%3B%0Atext%2Dalign%3A%20right%3B%20%7D%0Acode%2C%20tt%20%7B%0Amargin%3A%200%202px%3B%0Apadding%3A%200%205px%3B%0Awhite%2Dspace%3A%20nowrap%3B%0Aborder%3A%201px%20solid%20%23eaeaea%3B%0Abackground%2Dcolor%3A%20%23f8f8f8%3B%0Aborder%2Dradius%3A%203px%3B%20%7D%0Apre%20code%20%7B%0Amargin%3A%200%3B%0Apadding%3A%200%3B%0Awhite%2Dspace%3A%20pre%3B%0Aborder%3A%20none%3B%0Abackground%3A%20transparent%3B%20%7D%0A%2Ehighlight%20pre%20%7B%0Abackground%2Dcolor%3A%20%23f8f8f8%3B%0Aborder%3A%201px%20solid%20%23cccccc%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%2019px%3B%0Aoverflow%3A%20auto%3B%0Apadding%3A%206px%2010px%3B%0Aborder%2Dradius%3A%203px%3B%20%7D%0Apre%20%7B%0Abackground%2Dcolor%3A%20%23f8f8f8%3B%0Aborder%3A%201px%20solid%20%23cccccc%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%2019px%3B%0Aoverflow%3A%20auto%3B%0Apadding%3A%206px%2010px%3B%0Aborder%2Dradius%3A%203px%3B%20%7D%0Apre%20code%2C%20pre%20tt%20%7B%0Abackground%2Dcolor%3A%20transparent%3B%0Aborder%3A%20none%3B%20%7D%0A" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="開発を効率良く進めるために必要なこと">開発を効率良く進めるために必要なこと</h1>
+<p>created: 2019/01/21 modified: 2019/01/22 user: YUUKIToriyama</p>
+<h2 id="黒い画面をもっと利用しよう">黒い画面をもっと利用しよう</h2>
+<p>コンピュータを使って何か開発を行なう際、無駄な操作は一つでも省きたい。なぜなら、無駄な作業に手を煩わせているあいだに、せっかくひらめいたいいアイディアや頭の中に置いてあったコーディングの構想を忘れてしまうことがあるからだ。一度キーボードに手を置いたら、そのブロックを書き終わるまで手をキーボードから離したくないし、目線は画面に固定しておきたい。だから、極端なことを言えばパソコンからマウスは取り外してしまいたい。GUIのエディタより黒い画面とキーボードだけで開発したほうが効率がいい。 すべてをキーボードで操作できる以外にも(Linuxの)CLIには魅力がある。それはコマンド一つでいろんなプログラムをシェルから呼び出して使うことができ、さらにパイプ(｜)を使ってそれらを自由に繋げ、余計な中間ファイルなどつくることなくあらゆる出力を得ることができることだ。「一つのプログラムには一つのことをうまくやらせる」というUNIX哲学の下作られたさまざまなツールとパイプを用いれば、だいたいどんなことでも可能にできる。これを一般にシェルプログラミングというけれども、もっとキャッチーな名前が付けられている。それが「シェル芸」である。</p>
+<h2 id="シェル芸とは">シェル芸とは</h2>
+<blockquote>
+<p>マウスも使わず、ソースコードも残さず、GUIツールを立ち上げる間もなく、あらゆる調査・計算・テキスト処理をCLI端末へのコマンド入力一撃で終わらすこと。あるいはそのときのコマンド入力のこと。</p>
+</blockquote>
+<blockquote>
+<p>シェル芸の定義 バージョン1.1(<a href="https://b.ueda.tech/?page=01434" class="uri">https://b.ueda.tech/?page=01434</a>)</p>
+</blockquote>
+<h2 id="シェル芸を駆使して作業を効率化">シェル芸を駆使して作業を効率化</h2>
+<p>シェル芸を駆使すると開発の上で生じる煩雑な操作をいともかんたんに突破することができる。その例をいくつか紹介したいと思う。</p>
+<h3 id="繰り返し同じことを打ち込むのはナンセンス">繰り返し同じことを打ち込むのはナンセンス</h3>
+<p>たとえば、rubyでWeb作成をしていて次のような配列を用意しなければならなくなったとする。</p>
+<div class="sourceCode"><pre class="sourceCode ruby:array.rb"><code class="sourceCode ruby">month = [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>]
+day = [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">14</span>, <span class="dv">15</span>, <span class="dv">16</span>, <span class="dv">17</span>, <span class="dv">18</span>, <span class="dv">19</span>, <span class="dv">20</span>, <span class="dv">21</span>, <span class="dv">22</span>, <span class="dv">23</span>, <span class="dv">24</span>, <span class="dv">25</span>, <span class="dv">26</span>, <span class="dv">27</span>, <span class="dv">28</span>, <span class="dv">29</span>, <span class="dv">30</span>, <span class="dv">31</span>]</code></pre></div>
+<p>このような場合に、テンキーを使って一々数字を入力していたら時間がかかってしょうがない。数字だけならまだしも、途中にカンマと半角スペースを入れなければならない。こういうときにシェル芸を使うと便利である。</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">echo</span> <span class="dt">{1..31}</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="st">'s/ /, /g'</span>
+<span class="co">#=&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31</span></code></pre></div>
+<p>コマンドを使うと、キーボードを使って入力する文字の量がぐっと減り、数字キーと「ね」とスペースキーを行ったり来たりする無駄な単純作業を解消することができる。さらに、この方法を用いたほうがコードの正確性を保証できる。もちろんシェル芸が間違っていたら仕方がないが、テンキーから人間の手で入力した数字よりも、シェルのブレース展開やseqコマンドを使って出した数列のほうが正確なのは明らかだからである。 あるいはseqコマンドのsオプションを知っていればもっと短く書くこともできる。</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">seq</span> -s <span class="st">&quot;, &quot;</span> 1 31</code></pre></div>
+<p>なお、この結果をソースコードに貼り付ける際にも、一切マウスは使わない。確かに最近の黒い画面はマウスでコピーができるけれど、選択範囲が狂うことがあるから正確性が担保できない。それに、コピー＆ペーストのためにいちいち画面を切り替えるのは面倒くさい。だからすべてをコマンドでやる。例えばvimをエディタに使っているのなら、vimはコマンドモードからシェル芸を呼び出すことができるから次のようにすればいい。</p>
+<pre class="vim"><code>Escでコマンドモードに入り、
+:read! echo {1..31} | sed 's/ /,&amp;/g'</code></pre>
+<h3 id="かんたんな表計算はシェル芸でawk芸">かんたんな表計算はシェル芸で(awk芸？)</h3>
+<p>たとえば次のようなエクセル表(csvファイル)があったとする。</p>
+<p>grocery_store.csv</p>
+<pre class="csv:grocery_store.csv"><code>#item,value,sales
+apple,100,10
+banana,130,5
+orange,80,20
+grape,230,10
+noodle,110,3
+cookie,100,1
+coffee,90,2
+whisky,650,1</code></pre>
+<p>一行目には商品名、二行目には１つあたりの値段、三行目にはそれぞれ何個売れたかが記録されている。ここで消費税は８％である。売上、あるいはお買い上げ金額はいくらだろうか。これはExcelの初歩の問題である。ただ、こんな計算のためにExcelのような重たいソフトを立ち上げるのはもったいない。シェル芸ならば、Excelが起動するのを待っているうちに計算を終わらせてしまうことができる。</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">cat</span> grocery_store.csv <span class="kw">|</span> <span class="fu">awk</span> -F <span class="st">&quot;,&quot;</span> <span class="st">'NR&gt;1{sum = sum + $2*$3*1.08} END {print sum}'</span>
+=<span class="op">&gt;</span><span class="ex">7354.8</span></code></pre></div>
+<p>答えを求めるだけならばこのようにすればいい。もし、表計算の結果をレポートのようにしたかったら次のようなawk文を組めばいい。</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">cat</span> grocery_store.csv <span class="kw">|</span> <span class="fu">awk</span> -F <span class="st">&quot;,&quot;</span> <span class="st">'NR==1{print $0,&quot;value*sales&quot;} NR&gt;=2{print $1,$2,$3,$2*$3; a = a + $3; b = b + $2*$3;} END {print &quot;\n合計点数:&quot;,a,&quot;\n小計:&quot;,b,&quot;\n合計(税込):&quot;,b * 1.08}'</span>
+
+<span class="co">#=&gt;</span>
+<span class="co">#item,value,sales value*sales</span>
+<span class="ex">apple</span> 100 10 1000
+<span class="ex">banana</span> 130 5 650
+<span class="ex">orange</span> 80 20 1600
+<span class="ex">grape</span> 230 10 2300
+<span class="ex">noodle</span> 110 3 330
+<span class="ex">cookie</span> 100 1 100
+<span class="ex">coffee</span> 90 2 180
+<span class="ex">whisky</span> 650 1 650
+
+合計点数: <span class="ex">52</span> 
+小計: <span class="ex">6810</span> 
+合計<span class="kw">(</span>税込<span class="kw">)</span><span class="bu">:</span> 7354.8</code></pre></div>
+<p>今回のシェル芸ではawkというコマンドを使った。awkとは文字列や数値などを含むカンマ区切りやスペース区切りのデータファイルを処理するのに便利なプログラミング言語である。awkはExcelとは違い、どんな環境でも使える上、どんなに大きなファイルでも比較的軽快に動くので便利である。文法も簡単であるため、覚えてしまえば使い慣れないExcelをリファレンス片手にいじるよりは簡単にデータの処理ができる。</p>
+<h3 id="ほかにもいろんなことができる">ほかにもいろんなことができる</h3>
+<ol type="1">
+<li><p>ひらがなを全部出力したくなったら</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">seq</span> 0x3041 0x3096 <span class="kw">|</span> <span class="fu">xargs</span> printf <span class="st">'printf &quot;\\U%X&quot;\n'</span> <span class="kw">|</span> <span class="fu">bash</span>
+<span class="co">#=&gt; ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんゔゕゖ</span></code></pre></div>
+<p>キリル文字もやっとく。</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">seq</span> 0x0400 0x04F0 <span class="kw">|</span> <span class="fu">xargs</span> printf <span class="st">'printf &quot;\\U%X&quot;\n'</span> <span class="kw">|</span> <span class="fu">bash</span>
+<span class="co">#=&gt; ЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяѐёђѓєѕіїјљњћќѝўџѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿҀҁ҂҃҄҅҆҇҈҉ҊҋҌҍҎҏҐґҒғҔҕҖҗҘҙҚқҜҝҞҟҠҡҢңҤҥҦҧҨҩҪҫҬҭҮүҰұҲҳҴҵҶҷҸҹҺһҼҽҾҿӀӁӂӃӄӅӆӇӈӉӊӋӌӍӎӏӐӑӒӓӔӕӖӗӘәӚӛӜӝӞӟӠӡӢӣӤӥӦӧӨөӪӫӬӭӮӯӰ </span></code></pre></div></li>
+<li><p>3の倍数のときアホになりたいとき</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="bu">echo</span> <span class="st">&quot;二十八 二十九 三十 三十一 三十二 三十三&quot;</span> <span class="kw">|</span> <span class="ex">mecab</span> -Oyomi <span class="kw">|</span> <span class="ex">uconv</span> -x latin <span class="kw">|</span> <span class="fu">sed</span> <span class="st">'s/san/sa↑~a〜n/g'</span> <span class="kw">|</span> <span class="ex">uconv</span> -x hiragana
+<span class="co">#=&gt; にじゅうはち にじゅうきゅう さ↑ぁ〜んじゅう さ↑ぁ〜んじゅういち さ↑ぁ〜んじゅうに さ↑ぁ〜んじゅうさ↑ぁ〜ん</span></code></pre></div></li>
+<li><p>gnuplotで正規分布っぽい曲線を書きたいとき</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">for</span> <span class="ex">i</span> in <span class="dt">{1..100000}</span><span class="kw">;</span> <span class="kw">do</span>
+<span class="bu">echo</span> <span class="st">&quot;((</span><span class="va">$RANDOM</span><span class="st">%100)+(</span><span class="va">$RANDOM</span><span class="st">%100)+(</span><span class="va">$RANDOM</span><span class="st">%100))/3&quot;</span>
+<span class="kw">done</span> <span class="kw">\</span>
+<span class="kw">|</span> <span class="fu">bc</span> <span class="kw">|</span> <span class="fu">sort</span> -n <span class="kw">|</span> <span class="fu">uniq</span> -c <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'{print $2,$1}'</span> \
+<span class="kw">|</span> <span class="ex">gnuplot</span> -e <span class="st">'set terminal png; set out &quot;疑似正規分布曲線.png&quot;; plot [0:100] &quot;-&quot; smooth cspline with lines'</span></code></pre></div></li>
+</ol>
+<p>疑似正規分布曲線.png</p>
+<figure>
+<img src="data:image/png;base64,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" alt="疑似正規分布曲線" /><figcaption>疑似正規分布曲線</figcaption>
+</figure>
+<ol start="4" type="1">
+<li>連番の画像を一括ダウンロードする<br />
+次のような連番ファイルを一括でダウンロードします。</li>
+</ol>
+<ul>
+<li>http://example.com/pics/118abp00475jp-1.jpg</li>
+<li>http://example.com/pics/118abp00475jp-2.jpg</li>
+<li>http://example.com/pics/118abp00475jp-3.jpg</li>
+<li>http://example.com/pics/118abp00475jp-4.jpg</li>
+<li>http://example.com/pics/118abp00475jp-5.jpg</li>
+<li>http://example.com/pics/118abp00475jp-6.jpg</li>
+<li>http://example.com/pics/118abp00475jp-7.jpg</li>
+<li>http://example.com/pics/118abp00475jp-8.jpg</li>
+<li>http://example.com/pics/118abp00475jp-9.jpg</li>
+<li><p>http://example.com/pics/118abp00475jp-10.jpg</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="fu">seq</span> 1 10 <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'{print &quot;http://example.com/pics/118abp00475jp-&quot;$1&quot;.jpg&quot;}'</span> <span class="kw">|</span> <span class="fu">xargs</span> wget</code></pre></div></li>
+</ul>
+<ol start="5" type="1">
+<li><p>無性に京都の地図が書きたくなったとき</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">for</span> <span class="ex">i</span> in <span class="dt">{1..4}</span><span class="kw">;</span> <span class="kw">do</span> <span class="bu">echo</span> -e <span class="st">&quot;　｜　｜　｜　\n一十一十一十一&quot;</span><span class="kw">;</span> <span class="kw">done</span> <span class="kw">|</span> <span class="fu">head</span> -n 7 <span class="kw">|</span> <span class="ex">paste</span> - <span class="op">&lt;(</span><span class="bu">echo</span> -e <span class="st">&quot;　\n丸太町\n　\n御池通\n　\n四条通\n　&quot;</span><span class="op">)</span> -d <span class="st">&quot;&quot;</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="st">'1i 堀川烏丸河原町'</span>
+<span class="co">#=&gt;</span>
+堀川烏丸河原町
+　｜　｜　｜　　
+一十一十一十一丸太町
+　｜　｜　｜　　
+一十一十一十一御池通
+　｜　｜　｜　　
+一十一十一十一四条通
+　｜　｜　｜　　</code></pre></div></li>
+</ol>
+<p>せっかくだからもっと大きく(シェル芸というよりもはやシェルスクリプト)</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#!/bin/bash</span>
+
+<span class="kw">for</span> <span class="ex">i</span> in <span class="dt">{1..9}</span><span class="kw">;</span> <span class="kw">do</span>
+    <span class="bu">echo</span> -e <span class="st">&quot;　　｜,　　　｜,　　\n　　｜,　　　｜,　　\n一一十,一一一十,一一&quot;</span> <span class="kw">|</span> <span class="fu">awk</span> -F <span class="st">&quot;,&quot;</span> <span class="st">'{print $1$2$2$2$3}'</span>
+<span class="kw">done</span> <span class="kw">\</span>
+    <span class="kw">|</span> <span class="ex">paste</span> - <span class="op">&lt;(</span><span class="bu">echo</span> -e  <span class="st">&quot;\n\n北大路 今出川 丸太町 御池通 四条通 五条通 七条通 九条通&quot;</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="st">'s/ /\n\n\n/g'</span><span class="op">)</span> -d <span class="st">&quot; &quot;</span> \
+    <span class="kw">|</span> <span class="fu">sed</span> <span class="st">'$d;1i 　西大路　堀川通　烏丸通　河原町'</span>
+
+
+<span class="co">#=&gt;</span>
+　西大路　堀川通　烏丸通　河原町
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 
+一一十一一一十一一一十一一一十一一 北大路
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 
+一一十一一一十一一一十一一一十一一 今出川
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 
+一一十一一一十一一一十一一一十一一 丸太町
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 
+一一十一一一十一一一十一一一十一一 御池通
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 
+一一十一一一十一一一十一一一十一一 四条通
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 
+一一十一一一十一一一十一一一十一一 五条通
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 
+一一十一一一十一一一十一一一十一一 七条通
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 
+一一十一一一十一一一十一一一十一一 九条通
+　　｜　　　｜　　　｜　　　｜　　 
+　　｜　　　｜　　　｜　　　｜　　 </code></pre></div>
+<h2 id="まとめ">まとめ</h2>
+<ul>
+<li>Webサイトの構築やソフトウェアの開発を行なう際にはシェルをうまく使いこなすと便利</li>
+<li>コマンド処理で無駄な作業をしなくて済む</li>
+<li>単純作業はシェルにやらせよう</li>
+<li>シェル芸を使って仕事を効率化させれば
+<ul>
+<li>キーボードの打ち過ぎによる腱鞘炎を予防できる</li>
+<li>正規分布が書ける</li>
+<li>3の倍数のときアホになれる</li>
+<li>京都の地図が描ける</li>
+<li>〇〇な画像の収集ができる</li>
+</ul></li>
+<li><strong><em>シェル芸最高</em></strong></li>
+</ul>
+<hr />
+<p>Copyright 2019 YUUKIToriyama All Rights Reserved.</p>
+</body>
 </html>
