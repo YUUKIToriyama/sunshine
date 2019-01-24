@@ -2,7 +2,7 @@
 
 use 5.010;
 
-@arr = (1,1);
+my @arr = (1,1);
 
 for ($i = 1; $i <= 20; $i = $i + 1) {
 	push(@arr, $arr[$i-1] + $arr[$i]);
