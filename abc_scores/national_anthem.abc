@@ -1,0 +1,31 @@
+X:1
+T:National Anthem of USSR
+M:2/4
+L:1/8
+Q:1/4=80
+K:C
+%%MIDI program 24
+z2 G | 
+c2 G3/2 A1/2 | B2 E E | A2 G3/2 F1/2 | G2 C C | 
+D2 D3/2 E1/2 | F2 F3/2 G1/2 | A2 B c | d2 z G | 
+e2 d3/2 c1/2 | d2 B G | c2 B3/2 A1/2 | B2 E E |
+A2 G3/2 F1/2 | G2 C3/2 C1/2 | c2 B3/2 A1/2 | G3 z | 
+%
+e4 | d c B c | d3 G | G4 |
+c4 | B A G A | B3 E | E2 z2 |
+c2 A3/2 B1/2 | c2 A3/2 B1/2 | c2 A c | f4 | 
+f4 | e d c d | e3 c | c4 | 
+d4 | c B A B | c3 A | A2 z2 | 
+c2 B3/2 A1/2 | G2 C3/2 C1/2 | c2 B3/2 A1/2 | G2 z G |
+%
+c2 G3/2 A1/2 | B2 E E | A2 G3/2 F1/2 | G2 C C | 
+D2 D3/2 E1/2 | F2 F3/2 G1/2 | A2 B c | d2 z G |
+e2 d3/2 c1/2 | d2 B G | c2 B3/2 A1/2 | B2 E E |
+A2 G3/2 F1/2 | G2 C3/2 C1/2 | c2 B3/2 A1/2 | G3 z |
+%
+e4 | d c B c | d3 G | G4 |
+c4 | B A G A | B3 E | E2 z2 |
+c2 A3/2 B1/2 | c2 A3/2 B1/2 | c2 A c | f4 | 
+f4 | e d c d | e3 c | c4 | 
+d4 | c B A B | c3 A | A2 z2 | 
+c2 B3/2 A1/2 | G2 C3/2 C1/2 | G4 | A2 B2 | c4 |]
