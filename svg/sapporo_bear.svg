@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700px" height="700px">
+	<desc>Sapp0r0 Beer Logo</desc>
+	<defs>
+		<linearGradient id="GoldGradient">
+			<stop offset="5%" stop-color="#F7DE05"/>
+			<stop offset="20%" stop-color="#DA8E00"/>
+			<stop offset="35%" stop-color="#EDAC06"/>
+			<stop offset="50%" stop-color="#F7DE05"/>
+			<stop offset="65%" stop-color="#ECB802"/>
+			<stop offset="80%" stop-color="#DAAF08"/>
+			<stop offset="95%" stop-color="#B67B03"/>
+		</linearGradient>
+	</defs>
+	<rect x="0" y="0" width="700px" height="700px" fill="black"/>	
+	<polyline fill="url(#GoldGradient)"
+		points="350,100 496,550 112,270 588,270 204,550 350,100"/>
+	<circle cx="350" cy="350" r="300" fill="none" stroke="url(#GoldGradient)" stroke-width="8"/>
+</svg>
