@@ -1,8 +1,8 @@
 {
-  "type": "山手線駅リスト",
-  "stations": [
+  "type": "FeatureCollection",
+  "features": [
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "大崎",
         "description": 1130201,
@@ -13,13 +13,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.619772,
-          139.728439
+          139.728439,
+          35.619772
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "五反田",
         "description": 1130202,
@@ -30,13 +30,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.625974,
-          139.723822
+          139.723822,
+          35.625974
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "目黒",
         "description": 1130203,
@@ -47,13 +47,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.633923,
-          139.715775
+          139.715775,
+          35.633923
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "恵比寿",
         "description": 1130204,
@@ -64,13 +64,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.646685,
-          139.71007
+          139.71007,
+          35.646685
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "渋谷",
         "description": 1130205,
@@ -81,13 +81,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.658871,
-          139.701238
+          139.701238,
+          35.658871
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "原宿",
         "description": 1130206,
@@ -98,13 +98,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.670646,
-          139.702592
+          139.702592,
+          35.670646
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "代々木",
         "description": 1130207,
@@ -115,13 +115,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.683061,
-          139.702042
+          139.702042,
+          35.683061
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "新宿",
         "description": 1130208,
@@ -132,13 +132,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.689729,
-          139.700464
+          139.700464,
+          35.689729
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "新大久保",
         "description": 1130209,
@@ -149,13 +149,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.700875,
-          139.700261
+          139.700261,
+          35.700875
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "高田馬場",
         "description": 1130210,
@@ -166,13 +166,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.712677,
-          139.703715
+          139.703715,
+          35.712677
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "目白",
         "description": 1130211,
@@ -183,13 +183,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.720476,
-          139.706228
+          139.706228,
+          35.720476
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "池袋",
         "description": 1130212,
@@ -200,13 +200,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.730256,
-          139.711086
+          139.711086,
+          35.730256
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "大塚",
         "description": 1130213,
@@ -217,13 +217,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.731412,
-          139.728584
+          139.728584,
+          35.731412
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "巣鴨",
         "description": 1130214,
@@ -234,13 +234,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.733445,
-          139.739303
+          139.739303,
+          35.733445
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "駒込",
         "description": 1130215,
@@ -251,13 +251,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.736825,
-          139.748053
+          139.748053,
+          35.736825
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "田端",
         "description": 1130216,
@@ -268,13 +268,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.737781,
-          139.761229
+          139.761229,
+          35.737781
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "西日暮里",
         "description": 1130217,
@@ -285,13 +285,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.731954,
-          139.766857
+          139.766857,
+          35.731954
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "日暮里",
         "description": 1130218,
@@ -302,13 +302,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.727908,
-          139.771287
+          139.771287,
+          35.727908
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "鶯谷",
         "description": 1130219,
@@ -319,13 +319,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.721484,
-          139.778015
+          139.778015,
+          35.721484
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "上野",
         "description": 1130220,
@@ -336,13 +336,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.71379,
-          139.777043
+          139.777043,
+          35.71379
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "御徒町",
         "description": 1130221,
@@ -353,13 +353,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.707282,
-          139.774727
+          139.774727,
+          35.707282
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "秋葉原",
         "description": 1130222,
@@ -370,13 +370,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.698619,
-          139.773288
+          139.773288,
+          35.698619
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "神田",
         "description": 1130223,
@@ -387,13 +387,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.691173,
-          139.770641
+          139.770641,
+          35.691173
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "東京",
         "description": 1130224,
@@ -404,13 +404,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.681391,
-          139.766103
+          139.766103,
+          35.681391
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "有楽町",
         "description": 1130225,
@@ -421,13 +421,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.675441,
-          139.763806
+          139.763806,
+          35.675441
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "新橋",
         "description": 1130226,
@@ -438,13 +438,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.666195,
-          139.758587
+          139.758587,
+          35.666195
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "浜松町",
         "description": 1130227,
@@ -455,13 +455,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.655391,
-          139.757135
+          139.757135,
+          35.655391
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "田町",
         "description": 1130228,
@@ -472,13 +472,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.645736,
-          139.747575
+          139.747575,
+          35.645736
         ]
       }
     },
     {
-      "type": "station",
+      "type": "Feature",
       "properties": {
         "title": "品川",
         "description": 1130229,
@@ -489,8 +489,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.62876,
-          139.738999
+          139.738999,
+          35.62876
         ]
       }
     }
