@@ -1,0 +1,1586 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "東京",
+        "description": 1131101,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.766103,
+          35.681391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "四ツ谷",
+        "description": 1131102,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.730644,
+          35.686041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "新宿",
+        "description": 1131103,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.700464,
+          35.689729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "吉祥寺",
+        "description": 1131104,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.579765,
+          35.703119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "三鷹",
+        "description": 1131105,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.560325,
+          35.702683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "国分寺",
+        "description": 1131106,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.480841,
+          35.700123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "立川",
+        "description": 1131107,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.413704,
+          35.698202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "日野",
+        "description": 1131108,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.39393,
+          35.679244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "豊田",
+        "description": 1131109,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.381495,
+          35.659502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "八王子",
+        "description": 1131110,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.338998,
+          35.655555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "西八王子",
+        "description": 1131111,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.31264,
+          35.656621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "高尾",
+        "description": 1131112,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.282288,
+          35.642026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "相模湖",
+        "description": 1131113,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.1885,
+          35.617335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "藤野",
+        "description": 1131114,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.15239,
+          35.615918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "上野原",
+        "description": 1131115,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.115787,
+          35.618747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "四方津",
+        "description": 1131116,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.072572,
+          35.614252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "梁川",
+        "description": 1131117,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.038076,
+          35.605271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "鳥沢",
+        "description": 1131118,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.003345,
+          35.608118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "猿橋",
+        "description": 1131119,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.968388,
+          35.61288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "大月",
+        "description": 1131120,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.942729,
+          35.613222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "初狩",
+        "description": 1131121,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.883966,
+          35.594274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "笹子",
+        "description": 1131122,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.825205,
+          35.603921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "甲斐大和",
+        "description": 1131123,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.781632,
+          35.639364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "勝沼ぶどう郷",
+        "description": 1131124,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.74323,
+          35.67279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "塩山",
+        "description": 1131125,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.734796,
+          35.705327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "東山梨",
+        "description": 1131126,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.703026,
+          35.694313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "山梨市",
+        "description": 1131127,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.683003,
+          35.684961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "春日居町",
+        "description": 1131128,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.659,
+          35.673491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "石和温泉",
+        "description": 1131129,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.634577,
+          35.657603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "酒折",
+        "description": 1131130,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.598852,
+          35.659486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "甲府",
+        "description": 1131131,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.569015,
+          35.667054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "竜王",
+        "description": 1131132,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.519298,
+          35.668764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "塩崎",
+        "description": 1131133,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.487521,
+          35.687734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "韮崎",
+        "description": 1131134,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.451357,
+          35.709711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "新府",
+        "description": 1131135,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.433093,
+          35.736802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "穴山",
+        "description": 1131136,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.413858,
+          35.75107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "日野春",
+        "description": 1131137,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.394316,
+          35.79065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "長坂",
+        "description": 1131138,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.366459,
+          35.827061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "小淵沢",
+        "description": 1131139,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.316351,
+          35.863808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "信濃境",
+        "description": 1131140,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.275419,
+          35.884952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "富士見",
+        "description": 1131141,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.238071,
+          35.912183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "すずらんの里",
+        "description": 1131142,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.211775,
+          35.930288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "青柳",
+        "description": 1131143,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.197612,
+          35.942581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "茅野",
+        "description": 1131144,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.151674,
+          35.995062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "上諏訪",
+        "description": 1131145,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.116306,
+          36.046618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "下諏訪",
+        "description": 1131146,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.084953,
+          36.071948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "岡谷",
+        "description": 1131147,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.045001,
+          36.056693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "みどり湖",
+        "description": 1131148,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.981928,
+          36.094176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "川岸",
+        "description": 1131149,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.021937,
+          36.03296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "辰野",
+        "description": 1131150,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.997238,
+          35.984565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "信濃川島",
+        "description": 1131151,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.97185,
+          36.013642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "小野",
+        "description": 1131152,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9706,
+          36.04693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "塩尻",
+        "description": 1131153,
+        "marker-color": "#80ffff",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.947961,
+          36.114364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "名古屋",
+        "description": 1141101,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.881637,
+          35.170694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "金山",
+        "description": 1141102,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.900517,
+          35.142928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "鶴舞",
+        "description": 1141103,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.917436,
+          35.156416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "千種",
+        "description": 1141104,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.930665,
+          35.170168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "大曽根",
+        "description": 1141105,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.937161,
+          35.191508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "新守山",
+        "description": 1141106,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.951207,
+          35.207283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "勝川",
+        "description": 1141107,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.956285,
+          35.22982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "春日井",
+        "description": 1141108,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.985307,
+          35.243139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "神領",
+        "description": 1141109,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.010006,
+          35.256234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "高蔵寺",
+        "description": 1141110,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.043766,
+          35.26434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "定光寺",
+        "description": 1141111,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.080981,
+          35.278015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "古虎渓",
+        "description": 1141112,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.101011,
+          35.302955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "多治見",
+        "description": 1141113,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.120294,
+          35.334774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "土岐市",
+        "description": 1141114,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.182082,
+          35.359708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "瑞浪",
+        "description": 1141115,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.252017,
+          35.369081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "釜戸",
+        "description": 1141116,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.30501,
+          35.411103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "武並",
+        "description": 1141117,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.35417,
+          35.437938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "恵那",
+        "description": 1141118,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.407764,
+          35.455063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "美乃坂本",
+        "description": 1141119,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.450364,
+          35.479286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "中津川",
+        "description": 1141120,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.502867,
+          35.50036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "落合川",
+        "description": 1141121,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.530034,
+          35.525116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "坂下",
+        "description": 1141122,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.531094,
+          35.574218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "田立",
+        "description": 1141123,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.54893,
+          35.588281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "南木曽",
+        "description": 1141124,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.608672,
+          35.598896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "十二兼",
+        "description": 1141125,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.617569,
+          35.645418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "野尻",
+        "description": 1141126,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.636152,
+          35.673042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "大桑",
+        "description": 1141127,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.664224,
+          35.684477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "須原",
+        "description": 1141128,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.694844,
+          35.69769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "倉本",
+        "description": 1141129,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.714338,
+          35.732939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "上松",
+        "description": 1141130,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.693283,
+          35.784068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "木曽福島",
+        "description": 1141131,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.69343,
+          35.843669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "原野",
+        "description": 1141132,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.741536,
+          35.871245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "宮ノ越",
+        "description": 1141133,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.763794,
+          35.888337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "藪原",
+        "description": 1141134,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.784368,
+          35.930152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "奈良井",
+        "description": 1141135,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.816195,
+          35.969476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "木曽平沢",
+        "description": 1141136,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.832613,
+          35.979108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "贄川",
+        "description": 1141137,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.86091,
+          36.014008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "日出塩",
+        "description": 1141138,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.894804,
+          36.049004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "洗馬",
+        "description": 1141139,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.916842,
+          36.087164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "塩尻",
+        "description": 1141140,
+        "marker-color": "#fd7e00",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.947961,
+          36.114364
+        ]
+      }
+    }
+  ]
+}
