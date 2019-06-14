@@ -1,0 +1,498 @@
+{
+  "type": "山手線駅リスト",
+  "stations": [
+    {
+      "type": "station",
+      "properties": {
+        "title": "大崎",
+        "description": 1130201,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.619772,
+          139.728439
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "五反田",
+        "description": 1130202,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.625974,
+          139.723822
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "目黒",
+        "description": 1130203,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.633923,
+          139.715775
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "恵比寿",
+        "description": 1130204,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.646685,
+          139.71007
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "渋谷",
+        "description": 1130205,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.658871,
+          139.701238
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "原宿",
+        "description": 1130206,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.670646,
+          139.702592
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "代々木",
+        "description": 1130207,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.683061,
+          139.702042
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "新宿",
+        "description": 1130208,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.689729,
+          139.700464
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "新大久保",
+        "description": 1130209,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.700875,
+          139.700261
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "高田馬場",
+        "description": 1130210,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.712677,
+          139.703715
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "目白",
+        "description": 1130211,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.720476,
+          139.706228
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "池袋",
+        "description": 1130212,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.730256,
+          139.711086
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "大塚",
+        "description": 1130213,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.731412,
+          139.728584
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "巣鴨",
+        "description": 1130214,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.733445,
+          139.739303
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "駒込",
+        "description": 1130215,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.736825,
+          139.748053
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "田端",
+        "description": 1130216,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.737781,
+          139.761229
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "西日暮里",
+        "description": 1130217,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.731954,
+          139.766857
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "日暮里",
+        "description": 1130218,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.727908,
+          139.771287
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "鶯谷",
+        "description": 1130219,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.721484,
+          139.778015
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "上野",
+        "description": 1130220,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.71379,
+          139.777043
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "御徒町",
+        "description": 1130221,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.707282,
+          139.774727
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "秋葉原",
+        "description": 1130222,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.698619,
+          139.773288
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "神田",
+        "description": 1130223,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.691173,
+          139.770641
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "東京",
+        "description": 1130224,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.681391,
+          139.766103
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "有楽町",
+        "description": 1130225,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.675441,
+          139.763806
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "新橋",
+        "description": 1130226,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.666195,
+          139.758587
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "浜松町",
+        "description": 1130227,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.655391,
+          139.757135
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "田町",
+        "description": 1130228,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.645736,
+          139.747575
+        ]
+      }
+    },
+    {
+      "type": "station",
+      "properties": {
+        "title": "品川",
+        "description": 1130229,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.62876,
+          139.738999
+        ]
+      }
+    }
+  ]
+}
