@@ -396,7 +396,7 @@
       "type": "Feature",
       "properties": {
         "title": "東京",
-        "description": "<div style=\"width: 200px;\"><table><tr><td><a href=\"http://torisfactory.sakura.ne.jp/sblo_files/yuukitoriyama/image/Breakfast_at_Tokyo_Station_07.JPG\" target=\"_blank\"><img src=\"http://torisfactory.sakura.ne.jp/sblo_files/yuukitoriyama/image/Breakfast_at_Tokyo_Station_07-thumbnail2.JPG\" /></a></td></tr><tr><td>東京駅</td></tr></table></div>",
+        "description": "<div style=\"width: 200px;\"><table><tr><td><a href=\"http://torisfactory.sakura.ne.jp/sblo_files/yuukitoriyama/image/Breakfast_at_Tokyo_Station_07.JPG\" target=\"_blank\"><img src=\"http://torisfactory.sakura.ne.jp/sblo_files/yuukitoriyama/image/Breakfast_at_Tokyo_Station_07-thumbnail2.JPG\" alt=\"中央線ホームの写真です\" /></a></td></tr><tr><td>東京駅の写真</td></tr></table></div>",
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": ""
