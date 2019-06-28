@@ -22,7 +22,21 @@
 		$.getJSON("https://raw.githubusercontent.com/YUUKIToriyama/sunshine/master/geojson/yamanote_line.geojson", function(data) {
 			var geojson = L.geoJson(data, {
 				onEachFeature: function (feature, layer) {
-					layer.bindPopup(feature.properties.name);
+					//layer.bindPopup(feature.properties.popupContent);
+					var popupText = `
+					<div style="width: 200px; padding: 20px;">
+						<table>
+							<tr>
+								<td>写真</td>
+								<td><img src="${feature.properties["image-url"]}" alt="${feature.properties["title"]}" width="150px" /></td>
+							</tr>
+							<tr>
+								<td>詳細</td>
+								<td><p>${feature.properties["description"]}</p></td>
+							</tr>
+						</table>
+					</div>`;
+					layer.bindPopup(popupText);
 				}
 			});
 			geojson.addTo(map);
