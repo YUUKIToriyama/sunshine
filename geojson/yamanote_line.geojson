@@ -8,7 +8,8 @@
         "description": 1130201,
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
-        "marker-symbol": ""
+        "marker-symbol": "",
+        "image-src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Yamanotesen_Oosaki_eki_3.jpg"
       },
       "geometry": {
         "type": "Point",
