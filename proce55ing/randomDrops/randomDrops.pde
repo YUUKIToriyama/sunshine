@@ -1,4 +1,4 @@
-/* Randomness */
+/* RandomDrops */
 
 import java.util.Random;
 
