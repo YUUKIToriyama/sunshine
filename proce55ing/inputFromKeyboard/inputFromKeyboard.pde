@@ -2,15 +2,21 @@ void setup() {
   size(250,250);
   background(0);
   fill(255);
+  textSize(100);
 }
 
 void draw() {
 
 }
 
-//
+String str = "";
 void keyPressed() {
-  textSize(100);
-  fill(random(255));
-  text(key,random(250),random(255));
+  if (key == DELETE) {
+    str = "";
+    setup();
+  } else if (key != ENTER) {
+    str = str + key;
+  } else {
+    text(str, width/2, height/2);
+  }
 }
