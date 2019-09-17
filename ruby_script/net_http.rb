@@ -1,12 +1,9 @@
 #!/usr/bin/ruby
+# HTTPのステータスコードを見るには標準ライブラリのnet/httpを使うと便利です
 
 require 'net/http'
 
-class String
-	def to_uri
-		return URI.parse(self)
-	end
-end
-
-response = Net::HTTP.get_response(gets.chomp.to_uri)
-puts response.code
+address = gets.chomp
+uri = URI.parse(address)
+response = Net::HTTP.get_response(uri)
+puts "#{address} にアクセスした結果、 #{response.code}"
