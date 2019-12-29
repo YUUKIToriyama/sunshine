@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage{luatexja}
+\usepackage{luacode}
+
+\begin{luacode*}
+	-- LaTeXの改行を出すための函数
+	function n()
+		return string.char(92)..string.char(92)
+	end
+	
+	-- パスカルの三角形を計算するスクリプト
+	function pascalTriangle(row, upto)
+		tex.sprint(table.concat(row, " ")..n())
+		if #row < upto then
+			local i
+			local tmp = {1}
+			for i = 1, (#row - 1) do
+				table.insert(tmp, row[i] + row[i+1])
+			end 
+			table.insert(tmp, 1)
+			pascalTriangle(tmp, upto)
+		end
+	end
+
+	-- 円周率を計算するスクリプト(モンテカルロ法)
+	function calcPi(m)
+		local count = 0
+		for i = 1, m do
+			x, y = math.random(), math.random()
+			if x^2 + y^2 < 1 then
+				count = count + 1
+			end
+		end
+		return {m,count, 4 * count / m}
+	end
+
+\end{luacode*}
+
+\begin{document}
+
+\title{luaLaTeXであそぼう}
+\author{YUUKIToriyama}
+\date{}
+\maketitle
+
+	\centering
+	\directlua{pascalTriangle({1}, 17)}	
+
+	\vspace{49pt}
+
+	\directlua{
+		local result = calcPi(5000000)
+		tex.print("試行回数: " .. result[1] .. n())
+		tex.print("円の中に入った回数: " .. result[2] .. n())
+		tex.print("円周率: " .. result[3] .. n())
+		tex.print("誤差: " .. 1 - math.pi / result[3] .. n())
+	}
+	
+	
+\end{document}
