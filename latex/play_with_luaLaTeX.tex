@@ -4,6 +4,7 @@
 
 \usepackage{tikz}
 \usepackage{color}
+\usepackage{amsmath}
 
 \begin{luacode*}
 	-- LaTeXの改行を出すための函数
@@ -59,6 +60,19 @@
 			end
 		end
 	end
+
+	-- 平方根を計算するスクリプト
+	function calcSqrt(n,times)
+	        local a = n/2 
+	        local b = 2 
+
+	        for i=1,times do
+	                a,b = (a+b)/2, 2*a*b/(a+b)
+	        end
+
+		return {a,b}
+	end
+
 \end{luacode*}
 
 \begin{document}
@@ -96,6 +110,30 @@
 		tex.sprint(num.."までの素数を赤文字で表示"..n())
 		primeSeries(num)
 	}
+
+	\vspace{49pt}
+	
+	\newcommand{\fracinline}[2]{
+		$\raisebox{0.4ex}{\small $#1$}
+		\raisebox{0ex}{\large $/$}
+		\raisebox{-0.2ex}{\small $#2$}$
+	}
+
+	\begin{tabular}{c||c|c|c|c}
+		n & $a_{n}$ & $1-\fracinline{a_{n}}{\sqrt{1000}}$ & $b_{n}$ & $1-\fracinline{b_{n}}{\sqrt{1000}}$ \\
+		\hline
+		0 & 500 & - & 2 & - \\
+
+	\directlua{
+		for i=1,10 do
+			local calc = calcSqrt(1000,i)
+			r = math.sqrt(1000)
+			tex.print(table.concat({i, calc[1], 1-(calc[1]/r), calc[2], 1-(calc[2]/r)}, " & ") .. " " .. n())
+		end
+	}
+	
+	\end{tabular}
+	
 	
 	
 \end{document}
