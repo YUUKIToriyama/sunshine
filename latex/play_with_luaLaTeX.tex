@@ -2,6 +2,9 @@
 \usepackage{luatexja}
 \usepackage{luacode}
 
+\usepackage{tikz}
+\usepackage{color}
+
 \begin{luacode*}
 	-- LaTeXの改行を出すための函数
 	function n()
@@ -34,6 +37,28 @@
 		return {m,count, 4 * count / m}
 	end
 
+	-- 素数を計算するスクリプト
+	function primeSeries(m)
+		print(1)
+		if m <= 1 then
+			tex.sprint("invalid argument")
+		else
+			for i=2,m do
+				flag = true
+				for n=2,math.ceil(math.sqrt(i)) do
+					if i % n == 0 and i ~= n then
+						flag = false
+						break
+					end
+				end
+				if flag then
+					tex.sprint("\\textcolor{red}{"..i.."} ")
+				else
+					tex.sprint(i.." ")
+				end
+			end
+		end
+	end
 \end{luacode*}
 
 \begin{document}
@@ -47,13 +72,29 @@
 	\directlua{pascalTriangle({1}, 17)}	
 
 	\vspace{49pt}
+	\begin{tikzpicture}
+		\draw[thick, -stealth](-1,0)--(6,0) node [anchor=north]{$x$};
+		\draw[thick, -stealth](0,-1)--(0,6) node [anchor=east]{$y$};
+		\draw[domain=0:5] plot(\x, {sqrt(25 - \x^2)});
+		\node [anchor=north] at(3,3){$x^{2}+y^{2}=1$};
+		\draw [thick](0,5) node [anchor=east]{$1$}--(5,5)--(5,0) node [anchor=north]{$1$};
+		\node [anchor=south] at(5.5,5){$(1,1)$};
+	\end{tikzpicture}
 
 	\directlua{
-		local result = calcPi(5000000)
+		local result = calcPi(50000)
 		tex.print("試行回数: " .. result[1] .. n())
 		tex.print("円の中に入った回数: " .. result[2] .. n())
 		tex.print("円周率: " .. result[3] .. n())
 		tex.print("誤差: " .. 1 - math.pi / result[3] .. n())
+	}
+	
+	\vspace{49pt}
+	
+	\directlua{
+		local num = 999
+		tex.sprint(num.."までの素数を赤文字で表示"..n())
+		primeSeries(num)
 	}
 	
 	
