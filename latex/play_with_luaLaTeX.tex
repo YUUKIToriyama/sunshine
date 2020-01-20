@@ -6,6 +6,7 @@
 \usepackage{tikz}
 \usepackage{color}
 \usepackage{amsmath}
+\usepackage{ascmac}
 
 \begin{luacode*}
 	-- LaTeXの改行"\\"を出すための函数
@@ -99,21 +100,102 @@
 
 \end{luacode*}
 
+\usepackage{listings}
+\lstset{
+	language={[5.3]Lua},
+	backgroundcolor={\color[gray]{.90}},
+	breaklines=true,
+	commentstyle={\ttfamily \color[rgb]{0,0.5,0}},
+	keywordstyle={\bfseries \color[rgb]{0,0,1}},
+	stringstyle=\ttfamily,
+	columns=fullflexible,
+	numbers=left,
+	numberstyle={\tiny \emph},
+	numbersep=5pt
+}
+
 \begin{document}
 
 \title{luaLaTeXであそぼう}
 \author{YUUKIToriyama}
+\date{}
 
 \maketitle
 
-	\centering
-	コンパイル時刻
-	\directlua{tex.sprint(now())}
+	\section{はじめに}
+	
+	\subsection{このドキュメントについて}
+	このドキュメントはluaLaTeXでコンパイルすることによって見ることができます。このファイル内に書かれたプログラムをLuaインタープリタが解釈し、その結果を埋め込んだ文章を出力します。
+
+	たとえば、次のようなスクリプトが\symbol{92}begin\symbol{123}luacode*\symbol{125}〜\symbol{92}end\symbol{123}luacode*\symbol{125}内に書かれています。
+
+	\begin{lstlisting}
+-- 現在の日時刻を"year/month/day hour時min分sec秒"の形式で返す関数
+function now()
+	d = os.date("*t", t)
+	return d.year .. "/" .. d.month .. "/" .. d.day .. " " .. d.hour .. "時" .. d.min .. "分" .. d.sec .. "秒"
+end
+	\end{lstlisting}
+
+	これを\symbol{92}directlua\symbol{123}now()\symbol{125}によって呼び出すと次のようになります。表示されない場合はluaLaTeXを用いていないか、環境が対応していない可能性があります。
+	
+	\begin{itembox}[l]{出力結果}
+		\directlua{tex.sprint(now())}
+	\end{itembox}
+
+	\subsection{動作を確認した環境}
+	\begin{itemize}
+		\item Linux Mint 19.3
+		\item LuaTeX Version 1.10.0 (TeX Live 2019)
+			\begin{itemize}
+				\item Compiled with libpng 1.6.36; using 1.6.36
+				\item Compiled with lua version 5.3.5
+				\item Compiled with mplib version 2.00
+				\item Compiled with zlib 1.2.11; using 1.2.11
+			\end{itemize}
+	\end{itemize}
+
+
+	\section{二項係数の計算}
+	\subsection{二項係数とは}
+	二項係数とは、二項べき$(x + y)^{n}$を展開した時の$x^{k}y^{n-k}$の項の係数のことを言います。すなわち、
+
+	\begin{equation}
+		(x+y)^{n} = \sum_{k=0}^{n} {}_{n}\mathrm{C}_{k} x^{k}y^{n-k}
+	\end{equation}
+
+	における${}_n\mathrm{C}_{k}$のことである。
+
+	\begin{equation}
+		{}_{n}\mathrm{C}_{k} = \frac{n!}{k!(n-k)!}
+	\end{equation}
+
+	なお、$n = 0,1,2,3,\cdot$として、(1)の展開式のうち二項係数だけを上から順に書き出したものをパスカルの三角形と呼んでいる。今回は再帰を用いてこれを計算するスクリプトを書いた。これを以下に示す。
+
+	\subsection{コードと実行結果}
+	\begin{lstlisting}
+-- パスカルの三角形を計算するスクリプト
+function pascalTriangle(row, upto)
+	tex.sprint(table.concat(row, " ")..n())
+	if #row < upto then
+		local i
+		local tmp = {1}
+		for i = 1, (#row - 1) do
+			table.insert(tmp, row[i] + row[i+1])
+		end 
+		table.insert(tmp, 1)
+		pascalTriangle(tmp, upto)
+	end
+end
+	\end{lstlisting}
+
+	\begin{itembox}[l]{出力結果}
+		\centering
+		{\scriptsize \directlua{pascalTriangle({1}, 19)}}
+	\end{itembox}
 
 	
-	\directlua{pascalTriangle({1}, 17)}	
-
-	\vspace{49pt}
+	\section{モンテカルロ法による円周率の計算}
 	\begin{tikzpicture}
 		\draw[thick, -stealth](-1,0)--(6,0) node [anchor=north]{$x$};
 		\draw[thick, -stealth](0,-1)--(0,6) node [anchor=east]{$y$};
@@ -162,6 +244,6 @@
 	
 	\end{tabular}
 	
-	\directlua{getRemoteImage("https://static.tenki.jp/static-images/radar/recent/japan-detail-middle.jpg")}
+	%\directlua{getRemoteImage("https://static.tenki.jp/static-images/radar/recent/japan-detail-middle.jpg")}
 	
 \end{document}
