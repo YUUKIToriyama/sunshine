@@ -2,15 +2,23 @@
 \usepackage{luatexja}
 \usepackage{luacode}
 
+\usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{color}
 \usepackage{amsmath}
 
 \begin{luacode*}
-	-- LaTeXの改行を出すための函数
+	-- LaTeXの改行"\\"を出すための函数
 	function n()
 		return string.char(92)..string.char(92)
 	end
+
+	-- 現在の時刻を呼び出すスクリプト
+	function now()
+		d = os.date("*t", t)
+		return d.year .. "/" .. d.month .. "/" .. d.day .. " " .. d.hour .. "時" .. d.min .. "分" .. d.sec .. "秒"
+	end
+
 	
 	-- パスカルの三角形を計算するスクリプト
 	function pascalTriangle(row, upto)
@@ -73,16 +81,36 @@
 		return {a,b}
 	end
 
+	-- socket.httpを用いて画像をダウンロードするスクリプト
+	function getRemoteImage(url)
+		local io = require("io")
+		local http = require("socket.http")
+		local md5 = require("md5")
+
+		math.randomseed(os.time())
+		local id = md5.sumhexa(math.random())..".jpg"
+		local res = http.request(url)
+		io.output(id)
+		io.write(res)
+		io.close()
+
+		tex.print(string.char(92).."includegraphics{"..id.."}")
+	end
+
 \end{luacode*}
 
 \begin{document}
 
 \title{luaLaTeXであそぼう}
 \author{YUUKIToriyama}
-\date{}
+
 \maketitle
 
 	\centering
+	コンパイル時刻
+	\directlua{tex.sprint(now())}
+
+	
 	\directlua{pascalTriangle({1}, 17)}	
 
 	\vspace{49pt}
@@ -134,6 +162,6 @@
 	
 	\end{tabular}
 	
-	
+	\directlua{getRemoteImage("https://static.tenki.jp/static-images/radar/recent/japan-detail-middle.jpg")}
 	
 \end{document}
