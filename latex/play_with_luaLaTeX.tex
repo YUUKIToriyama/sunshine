@@ -10,6 +10,7 @@
 \usepackage{color}
 \usepackage{amsmath}
 \usepackage{ascmac}
+\usepackage{wrapfig}
 
 \begin{luacode*}
 	-- LaTeXの改行"\\"を出すための函数
@@ -98,7 +99,7 @@
 		io.write(res)
 		io.close()
 
-		tex.print(string.char(92).."includegraphics{"..id.."}")
+		tex.print(string.char(92).."includegraphics[width=6cm]{"..id.."}")
 	end
 
 \end{luacode*}
@@ -210,6 +211,7 @@ end
 		\node [anchor=north] at(3,3){$x^{2}+y^{2}=1$};
 		\draw [thick](0,5) node [anchor=east]{$1$}--(5,5)--(5,0) node [anchor=north]{$1$};
 		\node [anchor=south] at(5.5,5){$(1,1)$};
+		\node [anchor=north] at(-0.5,0){$(0,0)$};
 	\end{tikzpicture}
 
 	地面に円とそれに外接する正方形を描いて、その上にたくさんの画鋲を落とすことを考える。針が偏りなくランダムに落ちると仮定するとき、円の中に入る画鋲の数は正方形に対する円の面積に比例するはずである。このことを利用すると、画鋲を落とす実験から円周率の値を求めることができる。これをコンピュータ上でやってみよう。
@@ -240,7 +242,7 @@ end
 				local result = calcPi(m)
 				tex.print("試行回数: " .. result[1] .. n())
 				tex.print("円の中に入った回数: " .. result[2] .. n())
-				tex.print("円周率: " .. result[3] .. n())
+				tex.sprint("円周率: " .. result[3] .. n())
 				tex.print("誤差: " .. 1 - math.pi / result[3] .. n())
 			end
 			execCalcPi(10)
@@ -347,8 +349,25 @@ end
 			\end{tabular}
 		}
 	\end{itembox}
+	\begin{boxnote}
+		\subsubsection{コラム: socket.httpを用いてドキュメント内からWeb上の画像にアクセス}
+		\begin{wrapfigure}{r}{60mm}
+			\directlua{getRemoteImage("https://static.tenki.jp/static-images/pm25/recent-entry/recent-entry-japan-detail-middle.jpg")}
+		\end{wrapfigure}
+			lua\LaTeX のLuaインタープリタの持つ標準ライブラリのひとつにsocketがある。これを使うとWebアクセスが可能となる。ここでは日本天気協会のWebサイトから最新の天気図(PM2.5飛散図)をダウンロードしてみよう。
+			
+			lua\LaTeX のLuaインタープリタで使えるライブラリは少ないが、socketを使いこなせば\LaTeX をWebブラウザやSNSクライアントなどとしても使えるかもしれない。
+			\begin{lstlisting}
+local http = require("socket.http")
+local io = require("io")
 
+local res = http.response("https://static.tenki.jp/static-images/pm25/recent-entry/recent-entry-japan-detail-middle.jpg")
 
-	%\directlua{getRemoteImage("https://static.tenki.jp/static-images/radar/recent/japan-detail-middle.jpg")}
+io.output("image.jpg")
+io.write(res)
+io.close()
+			\end{lstlisting}
+		
+	\end{boxnote}
 	
 \end{document}
