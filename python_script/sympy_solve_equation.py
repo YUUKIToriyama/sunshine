@@ -2,9 +2,12 @@
 
 import sympy as sym
 
+a,b,c = sym.symbols("a b c")
 x = sym.Symbol("x")
-expr = x**2 + 4*x + 3
-eq = sym.Eq(expr)
+eq = sym.Eq(a * x**2 + b * x + c)
 
-root = sym.solve(eq)
-print(root)
+print(eq)
+
+roots = sym.solve(eq, x)
+
+print(roots)
